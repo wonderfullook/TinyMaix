@@ -253,12 +253,12 @@ Saved to tmdl/mnist_q.tmdl, tmdl/mnist_q.h
 
 现在你有了tmdl或者C头文件，把它放到你的工程里编译吧~
 
-## 涂黑使用Maixhub在线训练模型
+## 使用Maixhub在线训练模型
 TODO
 
 ## 怎样添加新平台的加速代码
 TinyMaix使用基础的点积函数加速卷积运算   
-你需要在src里添加arch_xxx_yyy.h, 并晚上你自己平台的点积加速函数：
+你需要在src里添加arch_xxx_yyy.h, 并实现你自己平台的点积加速函数：
 ```
 TM_INLINE void tm_dot_prod(mtype_t* sptr, mtype_t* kptr,uint32_t size, sumtype_t* result);
 ```
@@ -272,6 +272,6 @@ TM_INLINE void tm_dot_prod(mtype_t* sptr, mtype_t* kptr,uint32_t size, sumtype_t
 
 如果你对TinyMaix的使用和移植有问题，可以在此仓库提交Issues。
 
-如果你有商业或私有项目咨询，你可以发邮件到support@sipeed.com 或 zepan@sipeed.com (泽畔).  
+如果你有商业或私有项目咨询，你可以发邮件到 support@sipeed.com 或 zepan@sipeed.com (泽畔).  
 
 
